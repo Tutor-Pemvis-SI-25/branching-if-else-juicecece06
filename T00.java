@@ -9,9 +9,9 @@ public class T00 {
         int b;
 
         System.out.println("Masukkan bilangan pertama: ");
-        a = input.nextInt();
+        a = Integer.parseInt(input.nextLine());
         System.out.println("Masukkan bilangan kedua: ");
-        b = input.nextInt();
+        b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
             System.out.println("Bilangan pertama Genap");
         } else {
