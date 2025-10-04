@@ -1,11 +1,11 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class JT00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a;
+        int a, y, x;
         int b;
 
         System.out.println("Masukkan bilangan pertama: ");
@@ -13,14 +13,14 @@ public class T00 {
         System.out.println("Masukkan bilangan kedua: ");
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
-            System.out.println("Bilangan pertama Genap");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("Bilangan pertama Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (b % 2 == 0) {
-            System.out.println("Bilangan kedua Genap");
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan kedua Ganjil");
+            System.out.println("Bilangan kedua: Ganjil");
         }
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");
@@ -32,10 +32,12 @@ public class T00 {
             }
         }
         if (a % 2 == 0 && b % 2 == 0) {
-            System.out.println("Hasil penjumlahan=A+B");
+            x = a + b;
+            System.out.println("Hasil penjumlahan: " + x);
         } else {
             if (a % 2 == 1 && b % 2 == 1) {
-                System.out.println("Hasil perkalian=A*B");
+                y = a * b;
+                System.out.println("Hasil perkalian: " + y);
             } else {
                 System.out.println("Berbeda jenis");
             }
