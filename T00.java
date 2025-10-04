@@ -1,3 +1,5 @@
+// 12S25012 // Jusmer pasaribu // 12S2543 //Felix Siadari
+
 import java.util.*;
 import java.lang.Math;
 
@@ -8,9 +10,7 @@ public class T00 {
         int a, y, x;
         int b;
 
-        System.out.println("Masukkan bilangan pertama: ");
         a = Integer.parseInt(input.nextLine());
-        System.out.println("Masukkan bilangan kedua: ");
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");

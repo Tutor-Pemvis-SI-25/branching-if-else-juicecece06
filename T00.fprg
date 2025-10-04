@@ -4,18 +4,16 @@
         <attribute name="name" value="branching_flowgorithm"/>
         <attribute name="authors" value=""/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 11:06:59 AM"/>
+        <attribute name="saved" value="2025-10-04 11:08:38 AM"/>
         <attribute name="created" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTAxOzA5OjAwOjAyIFBNOzIxOTQ="/>
-        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzExOjA2OjU5IEFNOzEyOzIzNTE="/>
+        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzExOjA4OjM4IEFNOzEzOzIzNTE="/>
     </attributes>
     <function name="Main" type="None" variable="_">
         <parameters/>
         <body>
             <declare name="A, Y, X" type="Integer" array="False" size=""/>
             <declare name="B" type="Integer" array="False" size=""/>
-            <output expression="&quot;Masukkan bilangan pertama: &quot;" newline="True"/>
             <input variable="A"/>
-            <output expression="&quot;Masukkan bilangan kedua: &quot;" newline="True"/>
             <input variable="B"/>
             <if expression="A Mod 2 = 0">
                 <then>
