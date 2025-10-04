@@ -1,5 +1,3 @@
-//12S25012 - Jusmer Pasaribu 
-//12S25012 - Felix Siadari
 import java.util.*;
 import java.lang.Math;
 
@@ -7,40 +5,36 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, tambah, kali;
+        int bil1, bil2, y, x;
 
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
-        if (a % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap");
+        bil1 = Integer.parseInt(input.nextLine());
+        bil2 = Integer.parseInt(input.nextLine());
+        if (bil1 % 2 == 0) {
+            System.out.println("Bilangan pertama:Genap");
         } else {
-            System.out.println("Bilangan pertama: Ganjil");
+            System.out.println("Bilangan pertama:Ganjil");
         }
-        if (b % 2 == 0) {
-            System.out.println("Bilangan kedua: Genap");
+        if (bil2 % 2 == 0) {
+            System.out.println("Bilangan kedua:Genap");
         } else {
-            System.out.println("Bilangan kedua: Ganjil");
+            System.out.println("Bilangan kedua:Ganjil");
         }
-        if (a > b) {
+        if (bil1 > bil2) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (a < b) {
+            if (bil2 > bil1) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0) {
-            if (b % 2 == 0) {
-                tambah = a + b;
-                System.out.println("Hasil penjumlahan: " + tambah);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
+        if (bil1 % 2 == 0 && Integer.toString(bil2) + 2 == 0) {
+            y = bil1 + bil2;
+            System.out.println("Hasil penjumlahan:" + y);
         } else {
-            if (b % 2 != 0) {
-                kali = a * b;
-                System.out.println("Hasil perkalian: " + kali);
+            if (bil1 % 2 != 0 && bil2 % 2 != 0) {
+                x = bil1 * bil2;
+                System.out.println("Hasil perkalian:" + x);
             } else {
                 System.out.println("Berbeda jenis");
             }

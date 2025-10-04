@@ -1,43 +1,41 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="latihan tutor"/>
-        <attribute name="authors" value="WINDOWS 11"/>
+        <attribute name="name" value="T00"/>
+        <attribute name="authors" value="NITRO"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 02:31:52 PM"/>
-        <attribute name="created" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDE7MDg6MjA6NDIgUE07MjkzMA=="/>
-        <attribute name="edited" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDM7MDI6MDM6NTEgUE07MztBU1VTO0xBUFRPUC1GTDM1RU5FTzsyMDI1LTEwLTAxOzA4OjIxOjQ5IFBNO1QwMFsyXS5mcHJnOzY2OTU="/>
-        <attribute name="edited" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDM7MDI6MDk6MTkgUE07MTE7MzA5NA=="/>
-        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzAyOjMxOjUyIFBNOzI7MjMwOA=="/>
+        <attribute name="saved" value="2025-10-04 03:01:13 PM"/>
+        <attribute name="created" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzAyOjQyOjI5IFBNOzIyMDU="/>
+        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzAzOjAxOjEzIFBNOzE7MjMwMg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b, tambah, kali" type="Integer" array="False" size=""/>
-            <input variable="a"/>
-            <input variable="b"/>
-            <if expression="a MOD 2 == 0">
+            <declare name="bil1, bil2, y, x" type="Integer" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <if expression="bil1%2==0">
                 <then>
-                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama:Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama:Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="b MOD 2 == 0">
+            <if expression="bil2%2==0">
                 <then>
-                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua:Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua:Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="a&gt;b">
+            <if expression="bil1&gt;bil2">
                 <then>
                     <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="a&lt;b">
+                    <if expression="bil2&gt;bil1">
                         <then>
                             <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
@@ -47,23 +45,16 @@
                     </if>
                 </else>
             </if>
-            <if expression="a MOD 2 == 0">
+            <if expression="bil1%2==0 &amp;&amp; bil2&amp;2==0">
                 <then>
-                    <if expression="b MOD 2 == 0">
-                        <then>
-                            <assign variable="tambah" expression="a + b"/>
-                            <output expression="&quot;Hasil penjumlahan: &quot; &amp; tambah" newline="True"/>
-                        </then>
-                        <else>
-                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
-                        </else>
-                    </if>
+                    <assign variable="y" expression="bil1+bil2"/>
+                    <output expression="&quot;Hasil penjumlahan:&quot;&amp;y" newline="True"/>
                 </then>
                 <else>
-                    <if expression="b MOD 2 != 0">
+                    <if expression="bil1%2!=0 &amp;&amp; bil2%2!=0">
                         <then>
-                            <assign variable="kali" expression="a * b"/>
-                            <output expression="&quot;Hasil perkalian: &quot; &amp; kali" newline="True"/>
+                            <assign variable="x" expression="bil1*bil2"/>
+                            <output expression="&quot;Hasil perkalian:&quot;&amp;x" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
