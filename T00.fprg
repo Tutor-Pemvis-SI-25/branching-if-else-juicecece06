@@ -4,14 +4,14 @@
         <attribute name="name" value="branching_flowgorithm"/>
         <attribute name="authors" value=""/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 10:39:08 AM"/>
+        <attribute name="saved" value="2025-10-04 11:06:59 AM"/>
         <attribute name="created" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTAxOzA5OjAwOjAyIFBNOzIxOTQ="/>
-        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzEwOjM5OjA4IEFNOzExOzIzNDk="/>
+        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzExOjA2OjU5IEFNOzEyOzIzNTE="/>
     </attributes>
     <function name="Main" type="None" variable="_">
         <parameters/>
         <body>
-            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="A, Y, X" type="Integer" array="False" size=""/>
             <declare name="B" type="Integer" array="False" size=""/>
             <output expression="&quot;Masukkan bilangan pertama: &quot;" newline="True"/>
             <input variable="A"/>
@@ -19,18 +19,18 @@
             <input variable="B"/>
             <if expression="A Mod 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="B Mod 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan kedua Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="A &gt; B">
@@ -50,12 +50,14 @@
             </if>
             <if expression="(A Mod 2 = 0) and (B Mod 2 = 0)">
                 <then>
-                    <output expression="&quot;Hasil penjumlahan=A+B&quot;" newline="True"/>
+                    <assign variable="X" expression="A+B"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; X" newline="True"/>
                 </then>
                 <else>
                     <if expression="(A Mod 2 = 1) And (B Mod 2 = 1)">
                         <then>
-                            <output expression="&quot;Hasil perkalian=A*B&quot;" newline="True"/>
+                            <assign variable="Y" expression="A*B"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; Y" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
