@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="branching_flowgorithm"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-04 08:53:32 AM"/>
+        <attribute name="created" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTAxOzA5OjAwOjAyIFBNOzIxOTQ="/>
+        <attribute name="edited" value="TklUUk87SlVOSUFUSTsyMDI1LTEwLTA0OzA4OjUzOjMyIEFNOzEwOzIzNDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="_">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan pertama: &quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Masukkan bilangan kedua: &quot;" newline="True"/>
+            <input variable="B"/>
+            <if expression="A Mod 2 = 0">
+                <then>
+                    <output expression="&quot;Bilangan pertama Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan pertama Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="B Mod 2 = 0">
+                <then>
+                    <output expression="&quot;Bilangan kedua Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan kedua Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="A &gt; B">
+                <then>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="B &gt; A">
+                        <then>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Keduanya sama besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(A Mod 2 = 0) and (B Mod 2 = 0)">
+                <then>
+                    <output expression="&quot;Hasil penjumlahan=A+B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(A Mod 2 = 1) And (B Mod 2 = 1)">
+                        <then>
+                            <output expression="&quot;Hasil perkalian=A*B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
