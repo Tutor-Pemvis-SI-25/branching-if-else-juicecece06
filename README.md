@@ -4,7 +4,6 @@
 Buatlah satu algoritma di Flowgorithm untuk kasus berikut:
 
 ## Soal
-
 Sebuah program menerima input dua buah bilangan bulat dari user.
 Program harus melakukan hal berikut:
 
